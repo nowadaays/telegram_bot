@@ -19,9 +19,6 @@ public class Main {
     public static TelegramBot telegramBot = new TelegramBot(BOT_TOKEN);
 
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-
-
         telegramBot.setUpdatesListener(new UpdatesListener() {
             @Override
             public int process(List<Update> list) {
